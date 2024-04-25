@@ -1,0 +1,14 @@
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\bin\Debug\net8.0\SmallApp.exe
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\bin\Debug\net8.0\SmallApp.deps.json
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\bin\Debug\net8.0\SmallApp.runtimeconfig.json
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\bin\Debug\net8.0\SmallApp.dll
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\bin\Debug\net8.0\SmallApp.pdb
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\obj\Debug\net8.0\SmallApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\obj\Debug\net8.0\SmallApp.AssemblyInfoInputs.cache
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\obj\Debug\net8.0\SmallApp.AssemblyInfo.cs
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\obj\Debug\net8.0\SmallApp.csproj.CoreCompileInputs.cache
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\obj\Debug\net8.0\SmallApp.dll
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\obj\Debug\net8.0\refint\SmallApp.dll
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\obj\Debug\net8.0\SmallApp.pdb
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\obj\Debug\net8.0\SmallApp.genruntimeconfig.cache
+C:\Users\kateb\OneDrive\Документы\c#\SmallApp\obj\Debug\net8.0\ref\SmallApp.dll
