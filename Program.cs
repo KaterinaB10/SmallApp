@@ -1,6 +1,8 @@
 ﻿using System;
 // for dinamic arrays:
 using System.Collections.Generic;
+// for information in files:
+using System.IO;
 
 namespace project {
 
@@ -51,18 +53,34 @@ class Program
     //     System.Console.WriteLine("El: " + el);
     // };
 
-    NewFunction("Hello");
+    // NewFunction("Hello");
 
-    Summa(7,3);   
-    int x = 10, y = 2;
-    Summa(x, y);
+    // Summa(7,3);   
+    // int x = 10, y = 2;
+    // Summa(x, y);
 
-    int resultReturnFunction = ReturnFunction (26, 5);
-    NewFunction(resultReturnFunction.ToString());
+    // int resultReturnFunction = ReturnFunction (26, 5);
+    // NewFunction(resultReturnFunction.ToString());
 
 
-    // default parameter
-    CountryMethod();
+    // // default parameter
+    // CountryMethod();
+    // System.Console.WriteLine ("Write text: ");
+    // string? text = Console.ReadLine() ?? "";
+
+    // using(FileStream stream = new FileStream("info.txt", FileMode.OpenOrCreate)){
+    //     byte[] array = System.Text.Encoding.Default.GetBytes(text);
+
+    //     stream.Write(array, 0, array.Length);
+    // }
+
+    using(FileStream stream1 = File.OpenRead("info.txt")) {
+        byte[] array =  new byte[stream1.Length];
+        stream1.Read(array, 0, array.Length);
+
+        string textFromFile = System.Text.Encoding.Default.GetString(array);
+        System.Console.WriteLine(textFromFile);
+    }
     
 
     }
