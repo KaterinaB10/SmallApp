@@ -52,17 +52,40 @@ class Program
     // };
 
     NewFunction("Hello");
-    string? userInput = Console.ReadLine();
-    if (userInput != null){
-        NewFunction(userInput);
-        } else {
-            NewFunction("Hello");
-            }
+
+    Summa(7,3);   
+    int x = 10, y = 2;
+    Summa(x, y);
+
+    int resultReturnFunction = ReturnFunction (26, 5);
+    NewFunction(resultReturnFunction.ToString());
+
+
+    // default parameter
+    CountryMethod();
+    
+
     }
 
      // Methods
      public static void NewFunction(string word) {
         Console.WriteLine(word);
+     }
+
+
+     public static void Summa(int a, int b){
+        int result =  a + b;
+        Console.WriteLine(result);
+        NewFunction("Result is " + result);
+     }
+
+     public static int ReturnFunction(int x, int y)
+     {
+        return x + y;
+     }
+
+     public static void CountryMethod (string country = "Norway"){
+        Console.WriteLine(country);
      }
 
 
