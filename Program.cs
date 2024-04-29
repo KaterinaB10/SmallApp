@@ -36,22 +36,36 @@ class Program
 
     // dinamic arrays:
 
-    List<int> numbers = new List<int>(){
-        4, 6, 7
-    };
+    // List<int> numbers = new List<int>(){
+    //     4, 6, 7
+    // };
 
-    numbers.Add(40);
-    numbers.Add(100);
+    // numbers.Add(40);
+    // numbers.Add(100);
 
-    numbers.Remove(40);
-    numbers.Sort();
-    numbers.Reverse();
+    // numbers.Remove(40);
+    // numbers.Sort();
+    // numbers.Reverse();
 
-    foreach(int el in numbers){
-        System.Console.WriteLine("El: " + el);
-    };
+    // foreach(int el in numbers){
+    //     System.Console.WriteLine("El: " + el);
+    // };
 
+    NewFunction("Hello");
+    string? userInput = Console.ReadLine();
+    if (userInput != null){
+        NewFunction(userInput);
+        } else {
+            NewFunction("Hello");
+            }
     }
+
+     // Methods
+     public static void NewFunction(string word) {
+        Console.WriteLine(word);
+     }
+
+
 }
 
 }
