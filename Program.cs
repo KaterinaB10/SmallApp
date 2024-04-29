@@ -74,37 +74,47 @@ class Program
     //     stream.Write(array, 0, array.Length);
     // }
 
-    using(FileStream stream1 = File.OpenRead("info.txt")) {
-        byte[] array =  new byte[stream1.Length];
-        stream1.Read(array, 0, array.Length);
+    // using(FileStream stream1 = File.OpenRead("info.txt")) {
+    //     byte[] array =  new byte[stream1.Length];
+    //     stream1.Read(array, 0, array.Length);
 
-        string textFromFile = System.Text.Encoding.Default.GetString(array);
-        System.Console.WriteLine(textFromFile);
-    }
-    
+    //     string textFromFile = System.Text.Encoding.Default.GetString(array);
+    //     System.Console.WriteLine(textFromFile);
+    // }
+
+
+    // for robot:
+    Robot bot = new Robot();
+    bot.setValues("Robot", 180, new byte[] {0, 0, 0});
+    bot.printValues();
+
+    Robot mainBot = new Robot();
+    mainBot.setValues("Main Robot", 100000, new byte[] {30, 0, 15});
+    mainBot.printValues();
+
 
     }
 
      // Methods
-     public static void NewFunction(string word) {
-        Console.WriteLine(word);
-     }
+    //  public static void NewFunction(string word) {
+    //     Console.WriteLine(word);
+    //  }
 
 
-     public static void Summa(int a, int b){
-        int result =  a + b;
-        Console.WriteLine(result);
-        NewFunction("Result is " + result);
-     }
+    //  public static void Summa(int a, int b){
+    //     int result =  a + b;
+    //     Console.WriteLine(result);
+    //     NewFunction("Result is " + result);
+    //  }
 
-     public static int ReturnFunction(int x, int y)
-     {
-        return x + y;
-     }
+    //  public static int ReturnFunction(int x, int y)
+    //  {
+    //     return x + y;
+    //  }
 
-     public static void CountryMethod (string country = "Norway"){
-        Console.WriteLine(country);
-     }
+    //  public static void CountryMethod (string country = "Norway"){
+    //     Console.WriteLine(country);
+    //  }
 
 
 }
