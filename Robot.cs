@@ -3,6 +3,11 @@ using System;
 namespace project {
 
     class Robot {
+
+        // ------For counting robots:
+        public static int count;
+        // ---------------------------
+
         private string? name; 
         private int height;
         private byte[]? coordinates;
@@ -11,6 +16,11 @@ namespace project {
         public Robot(string bot_name, int bot_height, byte[] bot_coordinates){
             System.Console.WriteLine("Object has been created");
             setValues(bot_name, bot_height, bot_coordinates);
+            count++;
+        }
+
+        public Robot() {
+            count++;
         }
 
         // -------------------------------------------------
@@ -34,9 +44,14 @@ namespace project {
         }
         } else {
         System.Console.WriteLine("Coordinates is null");
-        }       
-
+        }    
         }
+
+        public static void Count(){
+            System.Console.WriteLine
+            ("There were created robots: " + count);
+        }
+        
     }
 
 

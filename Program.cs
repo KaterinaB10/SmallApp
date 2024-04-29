@@ -89,7 +89,9 @@ class Program
 
     Robot mainBot = new Robot("Main Robot", 100000, new byte[] {30, 0, 15});
     mainBot.printValues();
+    Robot.Count();
 
+    
 
     }
 
