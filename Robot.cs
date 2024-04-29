@@ -8,8 +8,9 @@ namespace project {
         private byte[]? coordinates;
 
         // constructor:
-        public Robot(){
+        public Robot(string bot_name, int bot_height, byte[] bot_coordinates){
             System.Console.WriteLine("Object has been created");
+            setValues(bot_name, bot_height, bot_coordinates);
         }
 
         // -------------------------------------------------
@@ -26,19 +27,14 @@ namespace project {
         public void printValues(){
             System.Console.WriteLine("Hi, I'm " + name +
             ". My height is " + height + ". Coordinates: ");
-            try {
+
     if (coordinates != null) {
         foreach (byte el in coordinates) {
             System.Console.WriteLine(el);
         }
-    } else {
+        } else {
         System.Console.WriteLine("Coordinates is null");
-    }
-} catch (NullReferenceException) {
-    System.Console.WriteLine("Something's gone wrong");
-}
-
-            
+        }       
 
         }
     }

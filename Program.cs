@@ -84,12 +84,10 @@ class Program
 
 
     // for robot:
-    Robot bot = new Robot();
-    bot.setValues("Robot", 180, new byte[] {0, 0, 0});
+    Robot bot = new Robot("Robot", 180, new byte[] {0, 0, 0});
     bot.printValues();
 
-    Robot mainBot = new Robot();
-    mainBot.setValues("Main Robot", 100000, new byte[] {30, 0, 15});
+    Robot mainBot = new Robot("Main Robot", 100000, new byte[] {30, 0, 15});
     mainBot.printValues();
 
 
