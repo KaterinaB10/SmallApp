@@ -38,6 +38,7 @@ namespace project {
             System.Console.WriteLine("Hi, I'm " + name +
             ". My height is " + height + ". Coordinates: ");
 
+
     if (coordinates != null) {
         foreach (byte el in coordinates) {
             System.Console.WriteLine(el);

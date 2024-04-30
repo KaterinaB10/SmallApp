@@ -87,9 +87,11 @@ class Program
     Robot bot = new Robot("Robot", 180, new byte[] {0, 0, 0});
     bot.printValues();
 
-    Robot mainBot = new Robot("Main Robot", 100000, new byte[] {30, 0, 15});
+    MainRobot mainBot = new MainRobot("Main Robot", 100000, new byte[] {30, 0, 15});
     mainBot.printValues();
-    Robot.Count();
+    mainBot.Health = 100;
+    System.Console.WriteLine("Health level: " + mainBot.Health);
+    MainRobot.Count();
 
     
 
