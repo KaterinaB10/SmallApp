@@ -84,15 +84,29 @@ class Program
 
 
     // for robot:
-    Robot bot = new Robot("Robot", 180, new byte[] {0, 0, 0});
-    bot.printValues();
+    // Robot bot = new Robot("Robot", 180, new byte[] {0, 0, 0});
+    // bot.printValues();
 
-    MainRobot mainBot = new MainRobot("Main Robot", 100000, new byte[] {30, 0, 15});
-    mainBot.printValues();
-    mainBot.Health = 100;
-    System.Console.WriteLine("Health level: " + mainBot.Health);
-    MainRobot.Count();
+    // MainRobot mainBot = new MainRobot("Main Robot", 100000, new byte[] {30, 0, 15});
+    // mainBot.printValues();
+    // mainBot.Health = 100;
+    // System.Console.WriteLine("Health level: " + mainBot.Health);
+    // MainRobot.Count();
 
+    // Robot List ------------------------
+
+    List<Robot> robots = new List<Robot>();
+    robots.Add(new Robot("Alex", 200, new byte[] {30, 0, 15}));
+    robots.Add(new Robot("John", 100, new byte[] {30, 0, 15}));
+    robots.Add(new Robot("Bobby", 100, new byte[] {30, 0, 15}));
+    robots.Add(new Robot("Viktor", 100, new byte[] {30, 0, 15}));
+    robots.Add(new Robot("Josh", 300, new byte[] {30, 0, 15}));
+
+    foreach(Robot obj in robots){
+        Console.WriteLine(obj.Name);
+    }
+
+    Robot.Count();
     
 
     }

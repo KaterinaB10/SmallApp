@@ -12,6 +12,12 @@ namespace project {
         private int height;
         private byte[]? coordinates;
 
+        public string? Name {
+            get {
+                return name;
+            } private set {}
+        }
+
         // constructor:
         public Robot(string bot_name, int bot_height, byte[] bot_coordinates){
             System.Console.WriteLine("Object has been created");
